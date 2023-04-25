@@ -1,24 +1,27 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
- * Description: 'Prints the alphabet in lowercase and uppercase'
- * Retuern: always 0 (success)
+ *
+ * Description: 'Prints the alphabet in lowercase except for letter e and q'
+ *
+ * Retuern: Always 0 (Success)
  */
+
 int main(void)
 {
-        int n = 97;
-	int n = 65;
+	int n = 97;
 
-        while (n <= 122)
-        {
-                putchar(n);
-                n++;
-        }
-	while (n <= 90)
+	while (n <= 122)
 	{
-		putchar (n);
+	if (n == 101 || n == 113)
+	{
 		n++;
+		continue;
 	}
-        putchar('\n');
-        return (0);
+	putchar(n);
+	n++;
+	}
+	putchar('\n');
+	return (0);
 }
