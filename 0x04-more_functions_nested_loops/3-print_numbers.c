@@ -3,18 +3,16 @@
 /**
  * print_numbers - function that prints the numbers
  *
- * @n: integer value
- *
- * Return: 0
+ * Return: Always 0
  */
+
 void print_numbers(void)
-
 {
-	int n;
+	char c;
 
-	for (n >= 48 && n <= 57; n++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		_putchar(n);
+	_putchar(c);
 	}
 	_putchar('\n');
 }

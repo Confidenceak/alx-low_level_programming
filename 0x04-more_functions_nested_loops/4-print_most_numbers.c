@@ -3,24 +3,18 @@
 /**
  * print_most_numbers - prints the numbers, from 0 to 9
  *
- * @n: ASCII Integer value
+ * @c: character
  *
  * Return: Always 0
  */
 void print_most_numbers(void)
 {
-	int n;
+	char c;
 
-	for (n >= 48 && n <= 57; n++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		if (n == 50 || n == 52)
-	{
-		break;
-	}
-		else
-	{
-		_putchar(n + 48);
-	}
+		if (!(n == '2' || n == '4'))
+			_putchar(c);
 	}
 	_putchar('\n');
 }
