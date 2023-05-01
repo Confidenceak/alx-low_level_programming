@@ -1,12 +1,13 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: 'Prints the alphabet in lowercase'
+ * Description: Prints the alphabet in lowercase
  * Retuern: always 0 (success)
  */
 int main(void)
 {
-	int n = 97;
+	char = 97;
+	int n;
 
 	while (n <= 122)
 	{
