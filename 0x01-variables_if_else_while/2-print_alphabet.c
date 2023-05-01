@@ -1,18 +1,15 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Description: Prints the alphabet in lowercase
+ * main - Prints the alphabet in lowercase
  * Retuern: always 0 (success)
  */
 int main(void)
 {
-	char = 97;
-	int n;
+	char l;
 
-	while (n <= 122)
+	for (l = 'a'; l <= 'z'; l++);
 	{
-		putchar(n);
-		n++;
+		putchar(l);
 	}
 	putchar('\n');
 	return (0);
