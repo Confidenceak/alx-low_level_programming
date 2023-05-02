@@ -1,23 +1,23 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: 'Prints the alphabet in lowercase and uppercase'
- * Retuern: always 0 (success)
+ * Description: Prints 'the alphabet in lowercase and uppercase'
+ * Return: always 0 (success)
  */
 int main(void)
 {
-	int n = 97;
-	int n = 65;
+	int i = 97;
+	int j = 65;
 
-	while (n <= 122)
+	while (i <= 122)
 	{
-		putchar(n);
-		n++;
+		putchar(i);
+		i++;
 	}
-	while (n <= 90)
+	while (j <= 90)
 	{
-		putchar (n);
-		n++;
+		putchar(j);
+		j++;
 	}
 	putchar('\n');
 	return (0);
