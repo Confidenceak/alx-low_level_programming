@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - from random numbers, print last digit if greater than 5, equal to 0 or 6.
+ * main - print last digit if greater than 5, equal to 0 or 6.
  * Return: always 0
  */
 int main(void)
