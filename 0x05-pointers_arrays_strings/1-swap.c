@@ -2,11 +2,11 @@
 
 /**
  * swap.c - swaps the values of two integers
- *@a: integer a
- *@b: integer b
+ *@a: integer a to be swaped
+ *@b: integer b to be swaped
  * Return: 0
  */
-void swap_int(int *a, int *b);
+void swap_int(int *a, int *b)
 {
 	int c;
 
