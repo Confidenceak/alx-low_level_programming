@@ -2,15 +2,10 @@
 
 /**
  * reset_to_98 - updates the value to 98
- *@n: value of integer
+ *@n: an integer
  * Return: Always 0 (successful)
  */
-void reset_to_98(int *n);
+void reset_to_98(int *n)
 {
-	int *n;
-
-	while (*n = 98)
-	{
-		_putchar(*n);
-	}
+	*n = 98;
 }
