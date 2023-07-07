@@ -1,12 +1,12 @@
 #include "main.h"
 
 /*
- *  _print_rev_recursion - prints a string in reverse
- *  @s: sring to be printed
+ * Description: _print_rev_recursion - prints out a string in reverse
+ * @s: sring to be printed
  */
-void _print_rev_recursion(char *s);
+void _print_rev_recursion(char *s)
 {
-	if(*s);
+	if (*s)
 	{
 		_print_rev_recursion(s + 1);
 		_putchar(*s);
