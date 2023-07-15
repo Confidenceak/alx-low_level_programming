@@ -7,22 +7,24 @@
  */
 void jack_bauer(void)
 {
-	int d, h;
+	int h, m;
 
-	d = 0;
-	while (d < 24)
+	h = 0;
+	while (h < 24)
 	{
-		h = 0;
-		while (h < 60)
+		m = 0;
+		while (m < 60)
 		{
-			_putchar((d / 10) + 48);
-			_putchar((h % 10) + 48);
-			_putchar(':');
-			_putchar((d / 10) + 48);
-			_putchar((h % 10) + 48);
+			_putchar((h / 10) + 48); /* print 10 digit of hour */
+			_putchar((h % 10) + 48); /* prints 10 digit of hours */
+			_putchar(':'); /* the ':' sign between the hour and minuite */
+			_putchar((m / 10) + 48); /* prints 10 digits of minuite */
+			_putchar((m % 10) + 48); /* print 10 digits of minuite */
 			_putchar('\n');
-			h++;
+			m++;
 		}
-		d++;
+		h++;
+		m = 0;
+
 	}
 }
