@@ -7,7 +7,5 @@
 int main(void)
 {
 	_putchar ("%s", _FILE_);
-	_putchar ('\n');
-	
 	return (0)
 }
