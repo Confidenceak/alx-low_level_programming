@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * init dog: initialize variable of data type dog
+ * init_dog - initialize variable type dog
  * @d: initialize the dog
  * @name: the name to be declared
  * @age: the declared age
