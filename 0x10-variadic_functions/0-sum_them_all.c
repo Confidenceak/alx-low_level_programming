@@ -3,20 +3,27 @@
 
 /**
  * sum_them_all - function that returns the sum of all its parameters.
- * Return: 0
+ * @n: the last no. before the unknown list
+ *
+ * Return: sum
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list sum;
+	va_list sumup;
+	unsigned int i;
+	int sum = 0;
 
-	va_start(sum, n);
+	va_start(sumup, n);
 
-	int i;
-	 for (i = 0; i < n; i++)
-	 {
-		 for (n == 0)
-			 return (0);
+	if (n == 0)
+	{
+		return (0);
+	}
+	for (i = 0; i < n; i++)
+	{
+		sum += va_arg(sumup, int);
+	}
+	va_end(sumup);
 
-		 va_arg(sum, int);
-	 }
+	return (sum);
 }
