@@ -12,21 +12,21 @@ int main(int argc, char *argv[])
 {
 	int bytes, i;
 	char *arr;
-	
+
 	if (argc != 2)
 	{
 		printf("Error\n");
-		exit (0);
+		exit(0);
 	}
 	bytes = atoi(argv[1]);
-	
-	if (byte = 0)
+
+	if (byte == 0)
 	{
 		printf("Error\n");
-		exit (2);
+		exit(2);
 	}
 	arr = (char *)main;
-	
+
 	for (i = 0; i < bytes; i++)
 	{
 		if (i == bytes - 1)
