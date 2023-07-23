@@ -9,7 +9,7 @@
  * Return: 0
  */
 int *array_range(int min, int max)
-{       
+{
 	int *result;
 	int arr_len, i;
 
@@ -22,7 +22,7 @@ int *array_range(int min, int max)
 	if (result == NULL)
 		return (NULL);
 
-        for (i = 0; i < arr_len; i++)
+	for (i = 0; i < arr_len; i++)
 	{
 		result[i] = min + i;
 	}
