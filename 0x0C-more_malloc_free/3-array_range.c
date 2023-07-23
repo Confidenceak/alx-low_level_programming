@@ -26,5 +26,5 @@ int *array_range(int min, int max)
 	{
 		result[i] = min + i;
 	}
-	return (result)
+	return (result);
 }
