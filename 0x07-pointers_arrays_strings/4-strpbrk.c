@@ -2,8 +2,8 @@
 #include <stddef.h>
 
 /**
- * _strpbrk - function that searches a string for any of a set of bytes.
- * @a: accept
+ * _strpbrk - function that searches a string
+ * @accept: finds a byte in the string
  * @s: string
  *
  * Return: 0
@@ -12,7 +12,7 @@ char *_strpbrk(char *s, char *accept)
 {
 	while (*s != '\0')
 	{
-		char* a = accept;
+		char *a = accept;
 
 		while (*a != '\0')
 		{
