@@ -10,16 +10,22 @@
  */
 void print_all(const char * const format, ...)
 {
+	char c;
+	char *s;
+	int i;
+	double f;
+	int count = 0;
+
 	va_list list;
 
 	va_start(list, format);
 
-		while (format[i])
+		while (format[count])
 		{
 			if (count > 0)
 				printf(", ");
 
-			switch (format[i])
+			switch (format[count])
 			{
 				case 'c':
 					c = va_arg(list, int);
@@ -36,13 +42,13 @@ void print_all(const char * const format, ...)
 				case 's':
 					s = va_arg(list, char*);
 					if (s == NULL)
-						printf("(nil)");
-					else
 						printf("%s", s);
 					break;
+				default:
+					break;
 			}
-			format++;
 			count++;
 		}
+		va_end(list);
 		printf("\n");
 }
