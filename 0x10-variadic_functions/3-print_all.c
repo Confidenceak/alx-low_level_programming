@@ -14,7 +14,6 @@ void print_all(const char * const format, ...)
 	int count = 0;
 
 	va_list list;
-
 	va_start(list, format);
 
 		while (format[count] != '\0')
