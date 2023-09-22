@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * prnt_this_first - function that print the specified message
+ * prnt_msg - function that print the specified message
  */
 void __attribute__((constructor)) prnt_msg()
 {
