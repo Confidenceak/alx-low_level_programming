@@ -1,12 +1,10 @@
 #include "lists.h"
 
 /**
- * struct listint_s - singly linked list
- * @n: integer
- * @next: points to the next node
+ * print_listint - function that prints all the elements of a list
+ * @h: pointer to the first node
  *
- * Description: singly linked list node structure
- * for Holberton project
+ * Return: number of nudes
  */
 size_t print_listint(const listint_t *h)
 {
@@ -19,5 +17,5 @@ size_t print_listint(const listint_t *h)
 		current = current->next;
 		node_num++;
 	}
-	return node_num;
+	return (node_num);
 }
